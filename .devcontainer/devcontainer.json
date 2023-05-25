@@ -7,7 +7,11 @@
 	"workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
 
 	// Features to add to the dev container. More info: https://containers.dev/features.
-	// "features": {},
+	"features": {
+		"ghcr.io/devcontainers/features/common-utils:2": {
+		  "version": "latest"
+		}
+	},
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	// This can be used to network with other containers or the host.
@@ -21,12 +25,7 @@
 		"vscode": {
 			"extensions": [
 				"GitHub.copilot",
-				"ms-azuretools.vscode-docker",
-				"rebornix.ruby",
-				"rebornix.ruby-rubocop",
-				"rebornix.ruby-bitbake",
-				"rebornix.ruby-rails-views",
-				"rebornix.ruby-rails"
+				"ms-azuretools.vscode-docker"
 			]
 		}
 		
